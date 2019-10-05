@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'info_fundacion.dart';
 import 'registro_dondante.dart';
 import 'registro_ong.dart';
 
@@ -37,6 +38,11 @@ class PantallaRegistroDonante extends StatefulWidget {
 class PantallaRegistroOng extends StatefulWidget {
   @override
   RegistroOng createState() => RegistroOng();
+}
+
+class PantallaInfoFundacion extends StatefulWidget {
+  @override
+  InfoFundacion createState() => InfoFundacion();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -83,7 +89,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  void pushSaved(BuildContext context, int num) {
+  
+}
+
+void pushSaved(BuildContext context, int num) {
     if (num == 0) {
       Navigator.push(
         context,
@@ -98,5 +107,11 @@ class _MyHomePageState extends State<MyHomePage> {
             builder: (context) => new PantallaRegistroOng()),
       );
     }
+    else if (num == 3){
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => new PantallaInfoFundacion()),
+      );
+    }
   }
-}

@@ -1,8 +1,11 @@
 import 'package:donapp/registro_dondante.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'main.dart';
+
 
 class FeedFundacion extends State<PantallaFeedFundacion> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +34,7 @@ class FeedFundacion extends State<PantallaFeedFundacion> {
                       RaisedButton(
                         child: Text("Nombre fundacion"),
                         onPressed: (){
-                          print("holis");
+                          pushSaved(context,3);
                         },
                       ),
                       SizedBox(width: 10),
@@ -80,7 +83,7 @@ class FeedFundacion extends State<PantallaFeedFundacion> {
                       RaisedButton(
                         child: Text("Nombre fundacion"),
                         onPressed: (){
-                          print("holis");
+                          pushSaved(context,3);
                         },
                       ),
                       SizedBox(width: 10),
@@ -129,7 +132,7 @@ class FeedFundacion extends State<PantallaFeedFundacion> {
                       RaisedButton(
                         child: Text("Nombre fundacion"),
                         onPressed: (){
-                          print("holis");
+                          pushSaved(context,3);
                         },
                       ),
                       SizedBox(width: 10),
@@ -178,7 +181,7 @@ class FeedFundacion extends State<PantallaFeedFundacion> {
                       RaisedButton(
                         child: Text("Nombre fundacion"),
                         onPressed: (){
-                          print("holis");
+                          pushSaved(context,3);
                         },
                       ),
                       SizedBox(width: 10),
@@ -213,4 +216,6 @@ class FeedFundacion extends State<PantallaFeedFundacion> {
           ],
         ));
   }
+
+ 
 }
